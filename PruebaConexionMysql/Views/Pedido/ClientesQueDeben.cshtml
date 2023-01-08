@@ -1,0 +1,51 @@
+﻿@model IEnumerable<LogicaNegocio.Models.PedidoModel>
+@{
+    ViewData["Title"] = "ClientesQueDeben";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CLIENTES QUE DEBEN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/Estiloscss/styleClientesDeben.css">
+</head>
+
+<body>
+    <div class="arriba">
+        <h1>CLIENTES QUE DEBEN</h1>
+        <img src="~/css/images/imagenDinero.png" class="imagen">
+    </div>
+    <div class="abajo">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6">
+                <form method="post" asp-action="ClientesQueDeben" asp-route-IdPedido="@item.NumeroPedido" >
+                    <div class="card border-secondary mb-3">
+                        <h5 class="card-header">NUMERO DE PEDIDO:@item.NumeroPedido </h5>
+                        <div class="card-body">
+                            <p class="card-text">Documento Cliente:@item.DocumentoCliente </p>
+                            <p class="card-text">Nombre Cliente:@item.nombre </p>
+                            <p class="card-text">Cantidad de panales:@item.cantidad </p>
+                            <p class="card-text">Precio del Pedido:@item.precio</p>
+                            <p class="card-text">Fecha del Pedido:@item.fechaPedido </p>
+                            <p class="card-text">Fecha de Entrega:@item.fechaEntrega </p>
+                            <p class="card-text">Estado: @item.Estado</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="submit" class="btn btn-warning">CAMBIAR ESTADO</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            }
+        </div>
+    </div>
+</body>
+
+</html>
+

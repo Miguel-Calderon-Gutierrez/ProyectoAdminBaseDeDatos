@@ -1,0 +1,59 @@
+﻿@model LogicaNegocio.Models.FuncionarioModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<h1>Guardar Empleado</h1>
+
+<div class="contenido-grid">
+    <div>
+        <form asp-action="CrearEmpleado" asp-controller="Funcionario" method="post">
+         
+
+            <div class="form-group">
+                <label asp-for="CORREO" class="control-label"></label>
+                <input asp-for="CORREO" class="form-control" />               
+            </div>
+            <div class="form-group">
+                <label asp-for="CONTRASENA" class="control-label"></label>
+                <input asp-for="CONTRASENA" class="form-control" type="password" />
+               
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Rol</label>
+                <select asp-for="FK_IDROL" class="form-control">
+                    @foreach(var item in ViewBag.roles){
+                        <option value="@item.Id">@item.nombreRol</option>    
+                    } 
+                </select>
+              
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Asignar A:</label>
+                <select asp-for="ID_FUNCIONARIOS" class="form-control">
+                    @foreach(var item in ViewBag.PerDisponibles){
+                        <option value="@item.documento">@item.nombres - @item.documento</option>    
+                    }       
+                </select>
+               
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+
+    <div class="text-center">
+        <img src="~/css/images/GuardarEmpleado.jpg" class="rounded" alt="Personas" style="width:500px; height:auto;">
+    </div>
+</div>
+
+

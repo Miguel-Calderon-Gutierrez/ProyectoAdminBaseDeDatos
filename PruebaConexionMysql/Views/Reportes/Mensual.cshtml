@@ -1,0 +1,29 @@
+﻿@model LogicaNegocio.Models.InformeModel
+@{
+    ViewData["Title"] = "Semanal";
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>REPORTE SEMANAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/Estiloscss/styleInforme.css">
+</head>
+
+<body>
+    <h1>REPORTE MENSUAL</h1>
+    <img src="~/css/images/imagenMensual.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" style="width: 15%; height: auto; margin: 20px 42%;">
+</body>
+
+
+<div class="text-center">
+    <form method="post" asp-action="mes" asp-controller="Reportes" class="text-center">
+        <input asp-for="fechaInicio" type="date" class="form-control" style="width:50%; margin:20px auto;">
+        <button class="btn btn-outline-danger" type="submit">Generar Informe</button>
+    </form>
+</div>
+
+
+</html>

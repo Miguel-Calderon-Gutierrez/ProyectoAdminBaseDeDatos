@@ -1,0 +1,197 @@
+﻿@using PruebaConexionMysql.Controllers
+@model LogicaNegocio.Models.AlimentoModel
+
+@{
+    var tiposAlimento = ViewBag.tipoAlimento;
+    var unidades = ViewBag.UnidadesMedida;
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/Estiloscss/alimento.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+<h1>Compra de alimento</h1>
+
+
+
+<div class="caja-Flex">
+
+    <div>
+        <label asp-for="fechaCompra" class="control-label"></label>
+        <input asp-for="fechaCompra" type="date" class="form-control" id="fechaCompra" />
+    </div>
+
+    <div>
+        <label asp-for="valorUnidad" class="control-label"></label>
+        <input asp-for="valorUnidad" type="number" class="form-control" id="valorUnidad" />
+    </div>
+
+    <div>
+        <label asp-for="peso" class="control-label"></label>
+        <input asp-for="peso" type="number" class="form-control" id="peso" />
+    </div>
+
+    <div>
+        <label asp-for="tipoAlimento" class="control-label"></label>
+        <select asp-for="tipoAlimento" class="form-control" id="tipoAlimento">
+            @foreach (var item in tiposAlimento)
+            {
+                <option value="@item.Id">@item.nombreTipoAlimento</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label asp-for="unidadMedidad" class="control-label"></label>
+        <select asp-for="unidadMedidad" class="form-control" id="unidadMedidad">
+            @foreach (var item in unidades)
+            {
+                <option value="@item.id">@item.Unidad</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button id="agregar" class="btn btn-primary agregar">Agregar</button>
+    </div>
+
+</div>
+
+<div class="contenedor-tabla">
+    <table class="table table-bordered table-striped table-sm text-center" id="lista">
+        <thead class="thead-dark">
+            <tr class="table-active">
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Unidad
+                </th>
+                <th>
+                    Cantidad
+                </th>
+                <th>
+                    valor Total
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+
+
+    </table>
+
+    <button id="guardar" class="btn btn-outline-primary"> Añadir </button>
+
+    <input style="display:none" id="usuario" value="@LoginController.usuario"/> 
+</div>
+
+<script>
+
+    var agregar = document.getElementById("agregar");
+    var guardarb = document.getElementById("guardar");
+    var lista = document.getElementById("lista");
+
+    var data = [];
+    var cant = 0;
+
+    agregar.addEventListener("click", agregarD);
+    guardarb.addEventListener("click", save);
+
+    function agregarD() {
+
+
+        var fechaCompra = document.getElementById("fechaCompra").value;
+        var valorUnidad = parseInt(document.getElementById("valorUnidad").value);
+        var peso = parseInt(document.getElementById("peso").value);
+        var tipoAlimento = parseInt(document.getElementById("tipoAlimento").value);
+        var unidadMedidad = parseInt(document.getElementById("unidadMedidad").value);
+
+        var tipoAlimentoCombo = document.getElementById("tipoAlimento");
+        var selectedAlimento = tipoAlimentoCombo.options[tipoAlimentoCombo.selectedIndex].text;
+
+        var unidadMedidadCombo = document.getElementById("unidadMedidad");
+        var selectedMedida = unidadMedidadCombo.options[unidadMedidadCombo.selectedIndex].text;
+
+        var usuario = document.getElementById("usuario").value;
+
+        data.push({
+            "id": cant,
+            "fechaCompra": fechaCompra,
+            "valorUnidad": valorUnidad,
+            "peso": peso,
+            "tipoAlimento": tipoAlimento,
+            "unidadMedidad": unidadMedidad,
+            "usuario": usuario,
+        });
+
+        var id_row = "row" + cant;
+
+        var fila =
+            '<tr id=' + id_row + '>' +
+            '<td>' + selectedAlimento + '</td>' +
+            '<td>' + selectedMedida + '</td>' +
+            '<td>' + peso + '</td>' +
+            '<td>' + valorUnidad + '</td>' +
+            '<td> <button id="Btn-eliminar" class="btn btn-danger" onclick="eliminar(' + cant + ')";>Eliminar</button></td>'
+            + '</tr>';
+
+        console.log(fila);
+
+        $("#lista").append(fila);
+
+        $("#valorUnidad").val('');
+        $("#peso").val('');
+
+
+        cant++;
+    }
+
+    function eliminar(row) {
+        //remover la fila de la tabla
+        $("#row" + row).remove();
+        var i = 0;
+        var pos = 0;
+        for (x of data) {
+            if (x.id = row) {
+                pos = i;
+            }
+            i++;
+        }
+
+        data.splice(pos, 1);
+    }
+
+    //En proceso
+    function save() {
+        var json = JSON.stringify(data);
+        console.log(json);
+
+
+        for (var i = 0; i < cant; i++) {
+
+            eliminar(i);
+        }
+
+
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RegistrarCompra","Alimento")",
+            data: "json=" + json,
+            succes: function() {
+                             
+            }
+        })
+
+        cant = 0;
+        data = [];
+
+         swal("Datos enviados!", "Se ha registrado la compra con exito!", "success");
+    }
+
+</script>

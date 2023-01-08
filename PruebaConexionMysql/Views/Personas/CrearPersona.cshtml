@@ -1,0 +1,60 @@
+﻿@model LogicaNegocio.Models.PersonaModel
+
+@{
+    ViewData["Title"] = "CrearPersona";
+}
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+
+<h1>Crear Persona</h1>
+
+<div class="contenido-grid">
+
+    <div>
+        <form asp-action="CrearPersona">
+
+            <div class="form-group">
+                <label asp-for="documento" class="control-label"></label>
+                <input asp-for="documento" class="form-control" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="nombres" class="control-label"></label>
+                <input asp-for="nombres" class="form-control" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="apellidos" class="control-label"></label>
+                <input asp-for="apellidos" class="form-control" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="telfono" class="control-label"></label>
+                <input asp-for="telfono" class="form-control" />
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+
+    <div class="text-center">
+        <img src="~/css/images/registroPersona.png" class="rounded" alt="Personas" style="width:400px; height:auto;">
+        <div class="botones-centro">
+            <a asp-action="Index" class="btn btn-primary ">Volver a la lista</a>
+        </div>
+    </div>
+
+</div>
+
+
+

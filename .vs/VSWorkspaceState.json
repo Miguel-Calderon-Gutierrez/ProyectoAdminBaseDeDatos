@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PruebaConexionMysql",
+    "\\PruebaConexionMysql\\Views",
+    "\\PruebaConexionMysql\\Views\\Login",
+    "\\PruebaConexionMysql\\Views\\Shared",
+    "\\PruebaConexionMysql\\wwwroot",
+    "\\PruebaConexionMysql\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\PruebaConexionMysql\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}

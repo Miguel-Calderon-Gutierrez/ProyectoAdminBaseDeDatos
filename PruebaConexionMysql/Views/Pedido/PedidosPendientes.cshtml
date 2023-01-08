@@ -1,0 +1,47 @@
+﻿@model IEnumerable<LogicaNegocio.Models.PedidoModel>
+
+@{
+    ViewData["Title"] = "PedidosPendientes";
+}
+<head>
+    <title>CLIENTES QUE DEBEN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<div class="arriba">
+    <h1>PedidosPendientes</h1>
+    <div class="text-center">
+        <img src="~/css/iconos/PedidoPendiente.png" class="rounded" alt="Personas" style="width:200px; height:auto;">
+    </div>
+</div>
+
+<div class="abajo">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6">
+                <form method="post" asp-action="ClientesQueDeben" asp-route-IdPedido="@item.NumeroPedido">
+                    <div class="card border-secondary mb-3">
+                        <h5 class="card-header">NUMERO DE PEDIDO:@item.NumeroPedido </h5>
+                        <div class="card-body">
+                            <p class="card-text">Información Cliente:@item.nombre </p>
+                            <p class="card-text">Cantidad de panales:@item.cantidad </p>
+                            <p class="card-text">Precio del Pedido:@item.precio</p>
+                            <p class="card-text">Fecha del Pedido:@item.fechaPedido </p>
+                            <p class="card-text">Fecha de Entrega:@item.fechaEntrega </p>
+                            <p class="card-text">Estado: @item.Estado</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a asp-action="ActualizarPedidoPendiente" asp-route-idPdedio="@item.NumeroPedido" type="submit" class="btn btn-warning">CAMBIAR ESTADO</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        }
+    </div>
+</div>
+
+

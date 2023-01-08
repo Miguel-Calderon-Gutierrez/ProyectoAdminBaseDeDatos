@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.div-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+}
+
+.contenido {
+    float: right;
+}
+
+.barra-opciones {
+    background: #32373D;
+    display: block;
+    height: 100vh;
+    width: 19%;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcionLista, #icono {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8.5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+    .opcionLista:hover {
+        background-color: #17224f;
+    }
+
+.iconos {
+    width: 20px;
+    height: auto;
+    margin: 0 5px;
+    font-size:8px; 
+}
+
+.contenido h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.botones-opciones {
+    display: flex;
+    justify-content:right;
+}
+
+.botones-centro {
+    display: flex;
+    padding: 35px 65px 0 0;
+    justify-content:flex-end;
+}
+.botonPersonas {
+    margin: 5px 7px;
+}
+
+.contenido-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<LogicaNegocio.Models.PedidoModel>
+@{
+    ViewData["Title"] = "Index";
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>VER PEDIDOS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/Estiloscss/styleVerPedidos.css">
+</head>
+
+<body>
+
+    <div class="container" style="margin: 30px auto;">
+        <div class="row">
+            <div class="col text-center">
+                <img src="~/css/images/imagenPedido.png" alt="" style="width: 100px;">
+                <h1>VER PEDIDOS</h1>
+            </div>
+        </div>
+
+        <div class="container text-center" style="margin-top: 30px;">
+            <div class="row justify-content-start">
+                @foreach (var item in Model)
+                {
+                    <div class="col-6">
+                        <form method="post" asp-action="SolicitudGarantia" asp-controller="Garantia" asp-route-numeroPedido="@item.NumeroPedido">
+                            <div class="card border-primary mb-3">
+                                <div class="card-header" style="background-color: #6383A2; color: #FFF;">
+                                    NUMERO DE PEDIDO:@item.NumeroPedido
+                                </div>
+                                <div class="card-body border-primary mb-3">
+
+                                    <p class="card-text">Cantidad de panales: @item.cantidad</p>
+                                    <p class="card-text">Fecha del pedido:@item.fechaPedido </p>
+                                    <p class="card-text">Fecha de entrega:@item.fechaEntrega </p>
+                                    <p class="card-text">Precio del pedido: @item.precio</p>
+                                    <p class="card-text">Estado del pedido: @item.Estado</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <button type="submit" class="btn btn-secondary">Solicitar Garantia</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿@using LogicaNegocio.Models
+@model IEnumerable<LogicaNegocio.Models.InformeModel>
+@{
+    var fechaInicio = ViewBag.Fecha;
+    var fechaFin = ViewBag.fechaFin;
+    ViewData["Title"] = "Index";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>REPORTE DIARIO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/Estiloscss/styleInforme.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>REPORTE DIARIO</h1>
+    <img src="~/css/images/imagenSemanal.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" style="width: 15%; height: auto; margin: 20px 42%;">
+</body>
+
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr class="table-dark">
+                <th scope="row">FECHA INICIO:@fechaInicio </th>
+                <td>FECHA FIN: @fechaFin</td>
+                <td>HUEVOS RECOLECTADOS</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr class="table-light">
+                    <th scope="row">Funcionario: @item.FUNCIONARIO</th>
+                    <th></th>
+                    <td>Total: @item.CANTIDADRECOLECTADA</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+
+</html>

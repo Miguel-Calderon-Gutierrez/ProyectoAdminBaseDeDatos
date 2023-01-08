@@ -1,0 +1,68 @@
+﻿@model IEnumerable<LogicaNegocio.Models.PersonaModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="~/css/site.css"/>
+</head>
+
+<h1 class="titulo">Ver personas</h1>
+
+<div class="text-center">
+  <img src="~/css/images/personas.png" class="rounded" alt="Personas" style="width:400px; height:auto;">
+</div>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr class="table-active">
+           
+            <th>
+                @Html.DisplayNameFor(model => model.documento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telfono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody class="table-hover">
+        @foreach (var item in Model)
+        {
+            <tr>
+             
+                <td>
+                    @Html.DisplayFor(modelItem => item.documento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telfono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.estado)
+                </td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="botones-opciones" >
+    <a asp-action="CrearPersona" class="btn btn-success botonPersonas">Crear persona</a>
+    <a asp-action="Index" asp-controller="Funcionario" class="btn btn-success botonPersonas">Crear empleado</a>
+</div>

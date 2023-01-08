@@ -1,0 +1,31 @@
+﻿@model LogicaNegocio.Models.PedidoModel
+
+@{
+    ViewData["Title"] = "SolicitarPedido";
+}
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<h1>Solicitar Pedido</h1>
+
+<div class="">
+    <div class=" align-self-center">
+        <div class="text-center">
+            <img src="~/css/images/panales.png" class="rounded" alt="Personas" style="width:400px; height:auto;">
+
+            <form asp-action="SolicitarPedido" style="margin: 0 20%;">
+
+                <label class="control-label align-self-start" style="width:100%; text-align:start;">Cantidad panales requeridos:</label>
+                <input asp-for="cantidad" class="form-control align-self-center" />
+
+                <label  class="control-label align-self-start" style="width:100%; text-align:start;">Fecha solicitud pedido</label>
+                <input asp-for="fechaPedido" class="form-control align-self-center" type="date" />
+              
+                <input type="submit" value="Enviar" class="btn btn-primary" style="margin:20px;" />
+
+            </form>
+        </div>
+    </div>
+</div>

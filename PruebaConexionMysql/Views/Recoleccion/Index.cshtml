@@ -1,0 +1,69 @@
+﻿@model LogicaNegocio.Models.HuevosDiariosModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>HUEVOS DIARIOS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="~/css/Estiloscss/styleHuevosDiarios.css">
+</head>
+
+<body>
+  <h1>HUEVOS DIARIOS</h1>
+
+  <div class="contenedor">
+    <div class="imagen">
+      <img src="~/css/images/huevosDiarios.png" class="imagenHuevo" alt="">
+    </div>
+
+
+    <div class="container text-inline" style="border: solid; padding: 0;">
+      <div class="col">
+        <form method="post" asp-action="RegistrarRecolecion">
+          <div class="row">
+            <div class="col text-center">
+              <div class="form-group">
+                <label class="form-label mt-4">Hora de recoleccion</label>
+              </div>
+              <div class="form-group">
+                <label class="form-label mt-4">Cantidad recolectada</label>
+              </div>
+              <div class="form-group">
+                <label class="form-label mt-4">Fecha de recoleccion</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <input asp-for="hora" type="time" class="form-label mt-4">
+              </div>
+              <div class="form-group">
+                   <br />
+                   <br />
+                <input asp-for="cantidadRecolecctada" type="number" class="form-label mt-4" style="margin-right:10px;">
+              </div>
+              <div class="form-group">
+                  <br />
+      
+                <input asp-for="fecha" type="date" class="form-label mt-4">
+              </div>
+            </div>
+          </div>
+          <div style="justify-content: center; margin: 0 40%;">
+          </br></br>
+            <button type="submit" class="btn btn-outline-success">Agregar</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
+

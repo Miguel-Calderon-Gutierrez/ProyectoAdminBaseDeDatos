@@ -1,0 +1,82 @@
+﻿@model LogicaNegocio.Models.GarantiaModel
+@{
+    ViewData["Title"] = "SolicitudGarantia";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SOLICITUD DE GARANTIA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/Estiloscss/styleSolicitudGarantia.css">
+</head>
+
+<body>
+    <h1>SOLICITUD DE GARANTIA</h1>
+    <div class="container" style="border-radius: 10px;background-color: #32373D ; height: 460px; width: 90%; display:flex; ">
+
+        <div class="col">
+            <form method="post" asp-action="GuardarGarantia">
+                <div class="container"
+                     style="border-radius: 10px; background-color: #FFF; height: 92%; width: 100%; margin: 2.5% 0;">
+                    <div style="display:flex; justify-content:center; ">
+                        <img src="~/css/images/iconoGarantia.png" style="margin: 20px;">
+                    </div>
+                    <div style="display:flex; flex-direction:column; justify-content: space-around;">
+                        <div>
+
+
+                            <input type="number" style="display:none" value="@ViewBag.NumeroPedido" asp-for="IdPedido">
+
+                            <div class="contenido-grid " style="align-items:center; margin:0 10px;">
+                                <label class="form-label">TIPO DE DAÑO</label>
+                                <input type="text" class="form-label" asp-for="daño">
+                            </div>
+
+
+                            <div class="" style="display:flex; align-items:center;">
+                                <label class="form-label" style="margin-right:10px;">DESCRIPCION DEL DAÑO:  </label>
+                                <textarea class="form-label mt-4" style="overflow: scroll;
+                                resize: none;" asp-for="descripcion"></textarea>
+                            </div>
+
+                            <div class="contenido-grid">
+                                <label class="form-label">CANTIDAD DE HUEVOS A REPORTAR</label>
+                                <input type="number" class="form-label" asp-for="cantidad">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; justify-content:center;">
+                        <button type="submit" class="btn btn-outline-primary" style="margin-bottom:53px;">SOLICITAR</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+        <div class="col">
+            <div class="container"
+                 style="border-radius: 10px; background-color: #FFF;height: 430px; width: 100%; margin: 2.5% 0;">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <div class="form-group">
+                            <label for="formFile" class="form-label mt-4">Cargue soporte para garantia</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="~/css/images/huevoPodrido.jpg" class="imagen" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

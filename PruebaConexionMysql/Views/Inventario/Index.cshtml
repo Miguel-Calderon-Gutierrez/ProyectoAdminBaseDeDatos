@@ -1,0 +1,43 @@
+﻿@model IEnumerable<LogicaNegocio.Models.InventarioModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<h1>Inventario</h1>
+<div class="text-center">
+  <img src="~/css/images/Inventario.png" class="rounded" alt="Personas" style="width:300px; height:auto;">
+</div>
+<table class="table table-sm" >
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IDINVENTARIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TIPO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CANTIDAD)
+            </th>
+        </tr>
+    </thead>
+    <tbody class="table-hover">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDINVENTARIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIPO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CANTIDAD)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

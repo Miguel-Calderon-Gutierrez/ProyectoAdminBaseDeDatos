@@ -1,0 +1,143 @@
+﻿@model LogicaNegocio.Models.ClienteModel
+
+@{
+    ViewData["Title"] = "CrearCliente";
+}
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<h1>Crear Cliente</h1>
+
+<div class="contenido-grid">
+    <form asp-action="GuardarCliente">
+        <div class="form-group">
+            <label asp-for="documento" class="control-label"></label>
+            <input asp-for="documento" class="form-control" id="documento" autocomplete="off"/>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="nombres" class="control-label"></label>
+            <input asp-for="nombres" class="form-control" id="nombres" autocomplete="off"/>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="apellidos" class="control-label"></label>
+            <input asp-for="apellidos" class="form-control" id="apellidos" autocomplete="off"/>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="telfono" class="control-label"></label>
+            <input asp-for="telfono" class="form-control" id="telfono" autocomplete="off"/>
+
+        </div>
+        <label asp-for="DIRECCION" class="control-label"></label>
+        <input asp-for="DIRECCION" class="form-control" autocomplete="off" id="direccion" />
+
+        <label asp-for="contraseña" class="control-label"></label>
+        <input asp-for="contraseña" class="form-control" type="password" autocomplete="off" id="contrasena" />
+
+ 
+
+        <br />
+        <input type="submit" value="Añadir" class="btn btn-primary" />
+
+    </form>
+
+    <div class="col-md-3">
+        <img src="~/css/images/cliente.png" width="400px" />
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#documento").change(function() {
+            if ($("#documento").val().length > 0) {
+                llenarDatos()
+            }
+        });
+    });
+
+    function llenarDatos() {
+
+        var url = "@Url.Action("ConsultarPersona","Personas")";
+        var documentoval = $("#documento").val();
+        var data = {
+            documento: documentoval
+        };
+
+        $.post(url, data).done(function(data) {
+
+            $("#nombre_donante").val(data);
+            if (data != undefined && data.nombres != "Existe cliente" && data !="nueva") {
+
+                $("#nombres").val(data.nombres);
+                $("#apellidos").val(data.apellidos);
+                $("#telfono").val(data.telfono);
+
+                $("#nombres").prop('disabled', true);
+                $("#apellidos").prop('disabled', true);
+                $("#telfono").prop('disabled', true);
+                $("#direccion").prop('disabled', false);
+                $("#contrasena").prop('disabled', false);
+
+                swal({
+                    title: "Persona encontrada en el sistema!",
+                    text: "El documento ingresado pertenece a " + data.nombres,
+                    icon: "success",
+                    button: "Ok!",
+                });
+
+            } else if (data.nombres == "Existe cliente") {
+
+
+                $("#nombres").prop('disabled', true);
+                $("#apellidos").prop('disabled', true);
+                $("#telfono").prop('disabled', true);
+                $("#direccion").prop('disabled', true);
+                $("#contrasena").prop('disabled', true);
+
+
+                $("#nombres").val("");
+                $("#apellidos").val("");
+                $("#telfono").val("");                
+                $("#direccion").val("");
+                $("#contrasena").val("");
+
+                swal({
+                    title: "Ya existe cliente!",
+                    text: "El documento ingresado ya pertenece a un cliente",
+                    icon: "error",
+                    button: "Ok!",
+                });
+
+            } else if (data == "nueva" ){
+
+                 swal({
+                    title: "Persona nueva!",
+                    text: "Bienvenido a huevos Diana, por favor ingresa tus datos y serás uno de nuestros maravillosos clientes",
+                    icon: "info",
+                    button: "Ok!",
+                });
+
+                $("#nombres").val("");
+                $("#apellidos").val("");
+                $("#telfono").val("");                
+                $("#direccion").val("");
+                $("#contrasena").val("");
+
+                $("#nombres").prop('disabled', false);
+                $("#apellidos").prop('disabled', false);
+                $("#telfono").prop('disabled', false);
+                $("#direccion").prop('disabled', false);
+                $("#contrasena").prop('disabled', false);
+            }
+        })
+    }
+</script>
+

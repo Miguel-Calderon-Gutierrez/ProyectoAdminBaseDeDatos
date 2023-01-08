@@ -1,0 +1,75 @@
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.deps.json
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.dll
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.pdb
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CopyComplete
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\refint\LogicaNegocio.dll
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\source\repos\proyectoWebFundacion\webHuevos\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\ref\LogicaNegocio.dll
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.deps.json
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.dll
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.pdb
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.dll
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.pdb
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.AssemblyReference.cache
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfoInputs.cache
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfo.cs
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CopyComplete
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.dll
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\refint\LogicaNegocio.dll
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.pdb
+D:\asp.net\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\ref\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.deps.json
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.dll
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.pdb
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CopyComplete
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\refint\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\Downloads\PruebaConexionMysql-login\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\ref\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.deps.json
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.pdb
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CopyComplete
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\refint\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\PruebaConexionMysql\LogicaNegocio\obj\Debug\net6.0\ref\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.deps.json
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\bin\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\bin\Debug\net6.0\AccesoDatos.pdb
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.csproj.CopyComplete
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\refint\LogicaNegocio.dll
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\LogicaNegocio.pdb
+C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\LogicaNegocio\obj\Debug\net6.0\ref\LogicaNegocio.dll

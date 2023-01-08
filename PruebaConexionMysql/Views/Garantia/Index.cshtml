@@ -1,0 +1,88 @@
+﻿@model IEnumerable<LogicaNegocio.Models.GarantiaModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gestionar Garantia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/Estiloscss/styleGestionarGarantia.css">
+    <script src="~/js/funcionalidad.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo">GESTIONAR GARANTIA</h1>
+    <div class="contenedor">
+
+        <div class="arriba">
+            <img src="~/css/images/imagenGarantia.png" class="imagen">
+        </div>
+
+        <div class="abajo">
+            <form method="post">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <td><b>Documento Cliente</b></td>
+                            <td><b># Pedido</b></td>
+                            <td><b>Cantidad de huevos</b></td>
+                            <td><b>Tipo de daño</b></td>
+                            <td><b>Descripcion</b></td>
+                            <td><b>Fecha ultimo cambio</b></td>
+                            <td><b>Estado</b></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th scope="row">@item.documentoCliente</th>
+                                <td>@item.IdPedido</td>
+                                <td>@item.cantidad</td>
+                                <td>@item.daño</td>
+                                <td>@item.descripcion</td>
+                                <td>@item.fechaCambio</td>
+                                <td>@item.Estado</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-outline-info" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Cambiar Estado
+                                            </button>
+                                            <ul class="dropdown-menu" style="">
+                                                <li><a class="dropdown-item" asp-action="ActualizarEstadoGarantia" asp-route-estado="1" asp-route-id_soliicitud="@item.id_soliicitud">En espera</a></li>
+                                                <li><a class="dropdown-item" asp-action="ActualizarEstadoGarantia" asp-route-estado="3" asp-route-id_soliicitud="@item.id_soliicitud">Aprobada</a></li>
+                                            </ul>
+                                        </div>
+                                        <a type="submit" class="btn btn-outline-danger" asp-action="ActualizarEstadoGarantia" asp-route-estado="2" asp-route-id_soliicitud="@item.id_soliicitud">Rechazar</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        }
+
+                    </tbody>
+                </table>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

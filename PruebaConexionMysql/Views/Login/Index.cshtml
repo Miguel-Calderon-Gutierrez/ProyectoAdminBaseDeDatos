@@ -1,0 +1,41 @@
+﻿@model LogicaNegocio.Models.LoginModel
+@{
+    Layout = null;
+}
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="/css/LoginEstilos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        #caja1, #caja2 {
+            background-color: RGB(246, 222, 189);
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div class="caja-mayor">
+        <div class="box-imagen">
+            <img src="/css/images/gallinaLogin.png" />
+        </div>
+        <div class="caja-mayor2">
+            <h2 class="texto">INICIAR SESION</h2>
+            <form asp-controller="Login" asp-action="validar" method="post" class="formulario">
+                <input id="caja1" class="nom" type="text" required placeholder="  Usuario" asp-for="correo" />
+                <input id="caja2" class="contra" type="password" required placeholder=" *******" asp-for="contraseña" />
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <img src="~/css/images/pasto.png"/>
+    </footer>
+</body>
+</html>

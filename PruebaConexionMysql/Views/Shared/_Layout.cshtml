@@ -1,0 +1,162 @@
+﻿@using PruebaConexionMysql.Controllers
+@{
+    string rol = LoginController.rol;
+    string user = PruebaConexionMysql.Controllers.LoginController.usuario;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProyectoHuevosBasesDeDatos</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="div-main">
+        <div class="barra-opciones">
+            <ul>
+                @if (rol == "Cliente")
+                {
+                    <a asp-action="Index" asp-controller="Home" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/hogar.png"
+                         class="iconos"> Inicio
+                    </a>
+
+                    <a asp-action="SolicitarPedido" asp-controller="Pedido" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/comprar.png"
+                         class="iconos">Solicitar pedido
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Pedido" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/pedido-en-linea.png"
+                         class="iconos"> Ver Pedidos
+                    </a>
+                    <a asp-action="cerrarSesion" asp-controller="Login" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/sistema-de-seguridad.png"
+                         class="iconos"> Cerrar sesion
+                    </a>
+
+                }
+                else if (rol == "Funcionario")
+                {
+                    <a asp-action="Index" asp-controller="Home" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/hogar.png"
+                         class="iconos"> Inicio
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Recoleccion" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/huevo.png"
+                         class="iconos"> Huevos diarios
+                    </a>
+
+                    <a asp-action="PedidosPendientes" asp-controller="Pedido" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/telefono-inteligente.png"
+                         class="iconos"> pedidos pendientes
+                    </a>
+
+                    <a asp-action="ClientesQueDeben" asp-controller="Pedido" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/atrasado.png"
+                         class="iconos"> clientes que deben
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Inventario" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/inventario.png"
+                         class="iconos"> Inventario
+                    </a>
+                    <a asp-action="cerrarSesion" asp-controller="Login" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/sistema-de-seguridad.png"
+                         class="iconos"> Cerrar sesion
+                    </a>
+                }
+                else if (rol == "Administrador")
+                {
+                    <a asp-action="Index" asp-controller="Home" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/hogar.png"
+                         class="iconos"> Inicio
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Personas" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/Logopersonas.png"
+                         class="iconos"> Ver personas
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Recoleccion" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/huevo.png"
+                         class="iconos"> Huevos diarios
+                    </a>
+
+                    <a asp-action="PedidosPendientes" asp-controller="Pedido" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/telefono-inteligente.png"
+                         class="iconos"> pedidos pendientes
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Alimento" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/presupuesto.png"
+                         class="iconos"> costos de alimentación
+                    </a>
+
+                    <a asp-action="ClientesQueDeben" asp-controller="Pedido" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/atrasado.png"
+                         class="iconos"> clientes que deben
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Garantia" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/gestionar_garantia.png"
+                         class="iconos"> Gestionar Garantia
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Inventario" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/inventario.png"
+                         class="iconos"> Inventario
+                    </a>
+
+                    <a asp-action="Index" asp-controller="Reportes" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/numero-1.png"
+                         class="iconos"> Reporte diario
+                    </a>
+                    <a asp-action="semanal" asp-controller="Reportes" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/numero-7.png"
+                         class="iconos"> Reporte semanal
+                    </a>
+                    <a asp-action="mensual" asp-controller="Reportes" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/numero-30.png"
+                         class="iconos"> Reporte mensual
+                    </a>
+
+                    <a asp-action="cerrarSesion" asp-controller="Login" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/sistema-de-seguridad.png"
+                         class="iconos"> Cerrar sesion
+                    </a>
+                }
+                else
+                {
+
+                    <a asp-action="Index" asp-controller="Home" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/hogar.png"
+                         class="iconos"> Inicio
+                    </a>
+
+                    <a asp-action="CrearCliente" asp-controller="Personas" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/registro.png"
+                         class="iconos"> Registrar cliente
+                    </a>
+
+
+                    <a asp-action="Index" asp-controller="Login" class="opcionLista" id="icono">
+                        <img src="~/css/iconos/sistema-de-seguridad.png"
+                         class="iconos"> Iniciar sesion
+                    </a>
+                }
+            </ul>
+        </div>
+        <div class="espacioBarra">
+        </div>
+        <div class="contenido">
+            @RenderBody()
+        </div>
+    </div>
+
+</body>
+@await RenderSectionAsync("Scripts", required: false)
+

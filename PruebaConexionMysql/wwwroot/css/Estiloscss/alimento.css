@@ -1,0 +1,21 @@
+﻿.caja-Flex {
+    display:flex;
+    justify-content:space-between;
+}
+
+.agregar {
+    margin-top: 32px;
+    margin-right: 10px;
+}
+
+#Btn-eliminar {
+   color: white;
+   font-weight:bold;
+   cursor:pointer;
+   width:50%;
+}
+
+.contenedor-tabla {
+    margin: 30px ;
+
+}
