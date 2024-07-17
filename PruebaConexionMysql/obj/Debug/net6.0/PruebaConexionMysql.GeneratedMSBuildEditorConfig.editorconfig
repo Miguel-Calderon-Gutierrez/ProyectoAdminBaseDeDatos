@@ -5,124 +5,127 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PruebaConexionMysql
 build_property.RootNamespace = PruebaConexionMysql
-build_property.ProjectDir = C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\PruebaConexionMysql\
+build_property.ProjectDir = C:\Users\migca\OneDrive\Documentos\github\poryecto_basededatos\ProyectoAdminBaseDeDatos\PruebaConexionMysql\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Miguel Calderon\Desktop\proyecto bases de datos\desarrolloASP\HuevosDiana\HuevosDiana\PruebaConexionMysql
+build_property.MSBuildProjectDirectory = C:\Users\migca\OneDrive\Documentos\github\poryecto_basededatos\ProyectoAdminBaseDeDatos\PruebaConexionMysql
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Alimento/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Alimento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpbWVudG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Funcionario/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Funcionario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Garantia/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Garantia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyYW50aWFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Garantia/SolicitudGarantia.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Garantia/SolicitudGarantia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyYW50aWFcU29saWNpdHVkR2FyYW50aWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Home/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Home/Privacy.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Inventario/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Inventario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Login/AuditoriaLogin.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Login/AuditoriaLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQXVkaXRvcmlhTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Login/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Pedido/ClientesQueDeben.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Pedido/ClientesQueDeben.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENsaWVudGVzUXVlRGViZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Pedido/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Pedido/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Pedido/PedidosPendientes.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Pedido/PedidosPendientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXFBlZGlkb3NQZW5kaWVudGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Pedido/SolicitarPedido.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Pedido/SolicitarPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXFNvbGljaXRhclBlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Personas/CrearCliente.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Personas/CrearCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcQ3JlYXJDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Personas/CrearPersona.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Personas/CrearPersona.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcQ3JlYXJQZXJzb25hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Personas/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Personas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Recoleccion/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Recoleccion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb2xlY2Npb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Reportes/Diario.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Reportes/Diario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcRGlhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Reportes/Index.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Reportes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Reportes/Mensual.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Reportes/Mensual.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcTWVuc3VhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Reportes/mes.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Reportes/mes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcbWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Reportes/semana.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Reportes/semana.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcc2VtYW5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Reportes/Semanal.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Reportes/Semanal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcU2VtYW5hbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Shared/Error.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/_ViewImports.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/_ViewStart.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Calderon/Desktop/proyecto bases de datos/desarrolloASP/HuevosDiana/HuevosDiana/PruebaConexionMysql/Views/Shared/_Layout.cshtml]
+[C:/Users/migca/OneDrive/Documentos/github/poryecto_basededatos/ProyectoAdminBaseDeDatos/PruebaConexionMysql/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-biu7facvqg
